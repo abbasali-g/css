@@ -53,13 +53,13 @@ https://www.w3schools.com/bootstrap5/bootstrap_progressbars.php -->
       <!------image ---------
       <p>The .img-fluid class makes the image scale nicely to the parent element (resize the browser window to see the effect):</p>
        <img class="img-fluid rounded-circle" src="img/ny.jpg" alt="New York" width="1100" height="500"> 
-        --->
-       <!----- alert ------------>
-       <div class="alert alert-success alert-dismissible">
+      
+       ---- alert ------------
+      <div class="alert alert-success alert-dismissible">
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>
       </div>
-      <!-- ----------- button ---->
+      -- ----------- button ---
       <div>
       <a href="#" class="btn btn-success">Link Button</a>
         <button type="button" class="btn btn-outline-success btn-sm">Button</button>
@@ -82,7 +82,7 @@ https://www.w3schools.com/bootstrap5/bootstrap_progressbars.php -->
           </button>
       </div>
 
-      <!-- ----------- button Groups---->
+      - ----------- button Groups----
       <div class="btn-group">
         <button type="button" class="btn btn-primary">Apple</button>
         <button type="button" class="btn btn-primary">Samsung</button>
@@ -95,8 +95,8 @@ https://www.w3schools.com/bootstrap5/bootstrap_progressbars.php -->
         </div>
       </div>
       
-       <!------Badges     ---->
-    </br>
+       -----Badges     ----
+       </br>
        <h6>Example heading <span class="badge bg-secondary">New</span></h6>
        <span class="badge rounded-pill bg-primary">Primary</span>
        <h2>Badge inside a Button</h2>
@@ -106,6 +106,112 @@ https://www.w3schools.com/bootstrap5/bootstrap_progressbars.php -->
        <button type="button" class="btn btn-danger">
          Notifications <span class="badge bg-dark">7</span>
        </button>
+
+       <button type="button" class="btn btn-primary">
+         TestButton <span class="badge bg-info">9</span>
+       </button>
+
+       ------progressbar     ---
+       <div class="progress" style="height:20px">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:40%;height:20px">50%</div>
+      </div> 
+       ------progressbar   stacked  ----
+      <div class="progress">
+        <div class="progress-bar bg-success" style="width:40%">
+          Free Space
+        </div>
+        <div class="progress-bar bg-warning" style="width:30%">
+          Warning
+        </div>
+        <div class="progress-bar bg-danger" style="width:20%">
+          Danger
+        </div>
+      </div>
+   
+
+    ------pagination  ---
+    <ul class="pagination justify-content-center" style="margin:20px 0">
+      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+
+    <p></p>
+    ----------------------- list group-----
+    <ul class="list-group list-group-horizontal">
+      <a href="#" class="list-group-item disabled">Disabled item</a>
+      <a href="#" class="list-group-item disabled">Disabled item</a>
+      <a href="#" class="list-group-item">Third item</a>
+    </ul> 
+
+    ----------------------- Drop Down-
+
+    <div class="dropdown">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+        Dropdown button
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Normal</a></li>
+        <li><a class="dropdown-item active" href="#">Active</a></li>
+        <li><a class="dropdown-item disabled" href="#">Disabled</a></li>
+      </ul>
+    </div>
+  -->
+    <!-------Collapse-->
+    <div class="container sm-3">
+      <h2>Simple Collapsible</h2>
+      <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple collapsible</button>
+      <div id="demo" class="collapse">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+    </div>
+    <a href="#demo2" data-bs-toggle="collapse">Collapsible</a>
+
+    <div id="demo2" class="collapse">
+    Lorem ipsum dolor text....
+    </div> 
+  
+    ----------tab---------
+    <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+    </li>
+    <li class="nav-item dropdown">
+      <!-- <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a> -->
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Dropdown</a>
+      <ul class="dropdown-menu">
+        <li><a class="nav-link" data-bs-toggle="tab" href="#menu2">Link 1</a></li>
+        <li><a class="nav-link" data-bs-toggle="tab" href="#home">Link 2</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div>
+
+
+
 </div>
 
 </body>
